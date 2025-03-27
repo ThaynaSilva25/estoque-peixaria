@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peixaria - Estoque</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+  <header>
+    <h1>🐟 Peixaria XYZ</h1>
+    <nav>
+      <ul>
+        <li><a href="#estoque">Estoque</a></li>
+        <li><a href="#adicionar">Adicionar Peixe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção do Estoque -->
+    <section id="estoque">
+      <h2>📦 Estoque Atual</h2>
+      <table id="tabela-estoque">
+        <thead>
+          <tr>
+            <th>Nome do Peixe</th>
+            <th>Quantidade</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados do estoque serão inseridos aqui via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Seção de Adicionar Peixe -->
+    <section id="adicionar">
+      <h2>➕ Adicionar Peixe ao Estoque</h2>
+      <form id="form-adicionar">
+        <label for="nome-peixe">Nome do Peixe:</label>
+        <input type="text" id="nome-peixe" placeholder="Ex: Salmão" required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" required>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Peixaria XYZ - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
